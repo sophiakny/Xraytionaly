@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завантаження зображення</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .upload-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: center;
+        }
+
+        #preview {
+            max-width: 100%;
+            height: auto;
+            display: none;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        .file-input {
+            margin: 15px 0;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .loading {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Завантажити зображення</h2>
+    <div class="upload-container">
+        <input type="file" id="fileInput" class="file-input" accept="image/*">
+        <br>
+        <img id="preview">
+        <br>
+        <button class="btn" id="uploadBtn">Перевірити</button>
+        <div class="loading" id="loadingText">Перевірка...</div>
+    </div>
+    <div id="status"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
