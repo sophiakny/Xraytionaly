@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -72,6 +72,102 @@
     </div>
     <div id="status"></div>
 
+    <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Xraytionaly</title>
+</head>
+<body>
+    <div class="menu">
+        <h2 class="menu">Xraytionaly</h2>
+    </div>
+    <div class="client"></div>
+
+
+    <div id="frame1">
+        <input id="button" value="Results" type="button" class="btn">
+        <div id="chat">
+            <div id="status"></div>
+        </div>
+        
+        <div id="pin_container">
+          
+            <label for="fileInput" class="custom-file-upload">
+                Choose file
+            </label>
+            <input type="file" id="fileInput" accept="image/*">
+            
+            <style>
+                input[type="file"] {
+                    display: none;
+                }
+            
+                .custom-file-upload {
+    position: center;
+    left:20px;
+    top:10px;
+    background-color: var(--menu);
+    color: var(--text_w);
+    text-align: center;
+    border-radius: 30px;
+    width: 120px;
+    border: none;
+    float:left;
+    padding:5px;
+    margin: 10px;
+    font-size: 20px;
+}
+            
+                .custom-file-upload:hover {
+                    background-color: #949ffc;
+                }
+            
+                .custom-file-upload:active {
+                    background-color: #949ffc;
+                    transform: scale(0.98);
+                }
+            </style>
+            
+            <script>
+                document.getElementById("fileInput").addEventListener("change", function() {
+                    let fileName = this.files[0] ? this.files[0].name : "Choose file ";
+                    document.querySelector(".custom-file-upload").textContent = fileName;
+                });
+            </script>
+            
+            
+      
+            <button class="btn" id="uploadBtn">Check</button>
+            <div class="loading" id="loadingText" style="display:none;">Analysis</div>
+        </div>
+    </div>
+    <div id="status"></div>
+
+
+    <div id="frame2">
+        <h3 id="header2">Description</h3>
+        <p id="description">Medical analysis will appear here.</p>
+    </div>
+
+
+    <div id="frame3">
+        <h3 id="header3">Doctor you talk to and others</h3>
+        <div class="doctor"><div class="d_photo"></div> <p class="d_name">Jon Smit</p></div>
+        <div class="doctor"><div class="d_photo"></div> <p class="d_name">Jon Smit</p></div>
+        <div class="doctor"><div class="d_photo"></div> <p class="d_name">Jon Smit</p></div>
+        <div class="doctor"><div class="d_photo"></div> <p class="d_name">Jon Smit</p></div>
+        <div class="doctor"><div class="d_photo"></div> <p class="d_name">Jon Smit</p></div>
+        <div class="doctor"><div class="d_photo"></div> <p class="d_name">Jon Smit</p></div>
+    </div>
+
+
+    
     <script src="script.js"></script>
 </body>
 </html>

@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             const result = await response.json();
-            statusDiv.innerHTML = `<p>✅ Відповідь сервера: ${JSON.stringify(result)}</p>`;
+            statusDiv.innerHTML = `${JSON.stringify(result)}`;
         } catch (error) {
             console.error("Помилка:", error);
             statusDiv.innerHTML = "<p style='color: red;'>❌ Помилка завантаження</p>";
