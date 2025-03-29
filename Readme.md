@@ -1,6 +1,6 @@
 ## Xraytionaly – AI Assistant for Medical Image Analysis  
 
-![Xraytionaly Logo](xrationaly-git-image.png)
+![Xraytionaly Logo](images/xrationaly-git-image.png)
 
 Xraytionaly is an innovative AI-powered platform designed to assist medical professionals in analyzing chest X-rays efficiently. Our goal is to reduce the workload on radiologists, minimize human error, and improve diagnostic accuracy, especially in overloaded medical institutions.  
 
